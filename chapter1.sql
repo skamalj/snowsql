@@ -19,7 +19,9 @@ create or replace table GARDEN_PLANTS.VEGGIES.ROOT_DEPTH (
    ); 
 
    USE WAREHOUSE COMPUTE_WH;
-
+   use schema garden_plants.veggies;
+show tables like 'root_depth';
+select get_ddl('table','root_depth');
 INSERT INTO VEGGIES.ROOT_DEPTH (
 	ROOT_DEPTH_ID ,
 	ROOT_DEPTH_CODE ,
